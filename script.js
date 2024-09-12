@@ -4,7 +4,7 @@ let cityTemp = document.getElementById("city-temp")
 let apiKey = "47e2c7596f7d41e2f5a89c149d2b60a9"
 form.addEventListener("submit", (event) => {
     event.preventDefault()
-    cityTemp.innerHTML = ""
+   
     //console.log("city name is ",cityName.value)
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appId=${apiKey}&units=metric`
     fetch(url)
